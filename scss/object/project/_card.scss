@@ -1,0 +1,34 @@
+
+.p-card{
+    width: 90%;
+    overflow: hidden;
+    padding-left: 10%;
+
+    &--instruction {
+        width: 100%;
+        color: #aaa;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__List {
+        width: 100%;
+        white-space: nowrap;
+        padding: 40px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        perspective: 700px;
+
+        > .c-card {
+        display: inline-block;
+        margin-right: 10px;
+        width: 200px;
+        white-space: normal;
+        transform-origin: right center;
+        
+            &__img {
+                min-height: 150px;
+            }
+        }
+    }
+}

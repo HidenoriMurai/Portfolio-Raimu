@@ -1,0 +1,14 @@
+.c-sns {
+  padding-top: 40px;
+  display: flex;
+  &__instagram {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__twitter {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+}

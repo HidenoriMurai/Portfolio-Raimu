@@ -1,0 +1,14 @@
+@use "../../foundation/color" as c;
+
+.p-profile {
+  color: c.$blogtext;
+  font-size: 2.4rem;
+  margin-top: 60px;
+  padding: 60px;
+  height: auto;
+  background-color: c.$blogbox-light;
+
+  &__img {
+    width: 100%;
+  }
+}

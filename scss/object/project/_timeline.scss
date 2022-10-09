@@ -1,0 +1,42 @@
+@use "../../foundation/color" as c;
+
+.p-timeline {
+  width: 96%;
+  max-width: 940px;
+  border: 1px solid #eeeeee;
+
+  &__list {
+    padding: 40px 0;
+
+    &__item {
+      display: flex;
+      line-height: 1.5;
+      font-size: 16px;
+
+      &__date {
+        width: 250px;
+        padding: 0 0 0 20px;
+        color: #888888;
+        font-weight: bold;
+      }
+
+      &__content {
+        position: relative;
+        width: 100%;
+        padding: 0 20px 60px 30px;
+        border-left: 1px solid #aaaaaa;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -10px; //widthの半分の値を指定
+          width: 20px;
+          height: 20px;
+          background-color: #00c2bc;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

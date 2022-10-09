@@ -1,0 +1,83 @@
+@use "../../foundation/color" as c;
+
+.c-btn {
+  // ブログ詳細ボタン
+  &__detail {
+    height: 30px;
+    width: 80px;
+    &__txt {
+      color: c.$white;
+    }
+  }
+
+  // お問い合せボタン
+  &__inform {
+    color: c.$darktext;
+    z-index: 10;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+}
+
+// ハンバーガーメニュー
+.c-btn__hamburger {
+  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/*ボタン内側*/
+.c-btn__hamburger .c-btn__hamburger__area {
+  transition: all 0.5s; /*アニメーションの設定*/
+  width: 70px;
+  height: 70px;
+}
+
+.c-btn__hamburger span {
+  display: inline-block;
+  transition: all 0.3s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: c.$darktext;
+  width: 45%;
+}
+
+.c-btn__hamburger span:nth-of-type(1) {
+  top: 23px;
+}
+
+.c-btn__hamburger span:nth-of-type(2) {
+  top: 33px;
+}
+
+.c-btn__hamburger span:nth-of-type(3) {
+  top: 43px;
+}
+
+/*activeクラスが付与されると .c-btn__hamburger__areaが360度回転し、その中の線が回転して×に*/
+.c-btn__hamburger.active .c-btn__hamburger__area {
+  transform: rotate(540deg);
+}
+
+.c-btn__hamburger.active span:nth-of-type(1) {
+  top: 27px;
+  left: 29px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.c-btn__hamburger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.c-btn__hamburger.active span:nth-of-type(3) {
+  top: 39px;
+  left: 29px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}

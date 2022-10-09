@@ -1,0 +1,36 @@
+@use "../../foundation/color" as c;
+
+.p-blog__parallax__img {
+  position: fixed; /* fixedに変更する。それ以外は同じ。 */
+  top: 70px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/back-imgのコピー.png);
+}
+
+.p-blog__parallax__front1 {
+  color: c.$blogtext;
+  font-size: 2.4rem;
+  margin-top: 30px;
+  padding: 60px;
+  height: 300px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: c.$blogbox-light;
+}
+
+.p-blog__parallax__front2 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-top: 60px;
+  padding: 60px;
+  height: 300px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: c.$blogbox-darkblue;
+}

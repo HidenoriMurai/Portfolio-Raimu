@@ -1,0 +1,15 @@
+@use "../../foundation/color" as c;
+
+.c-gradation {
+  width: 100%;
+  height: 100px;
+  background: -moz-linear-gradient(top, c.$blogbox-light, #fff);
+  background: -webkit-linear-gradient(top, c.$blogbox-light, #fff);
+  background: linear-gradient(to bottom, c.$blogbox-light, #fff);
+
+  &__skill {
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
