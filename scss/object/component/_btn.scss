@@ -13,7 +13,6 @@
   // お問い合せボタン
   &__inform {
     color: c.$darktext;
-    z-index: 10;
     font-size: 2.4rem;
     font-weight: bold;
   }
@@ -26,7 +25,6 @@
   width: 70px;
   height: 70px;
   border-radius: 5px;
-  z-index: 10;
 }
 
 /*ボタン内側*/
@@ -34,6 +32,7 @@
   transition: all 0.5s; /*アニメーションの設定*/
   width: 70px;
   height: 70px;
+  top: 0;
 }
 
 .c-btn__hamburger span {

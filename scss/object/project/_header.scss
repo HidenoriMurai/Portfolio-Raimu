@@ -1,14 +1,17 @@
 @use "../../foundation/color" as c;
 
-.p-header{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.p-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 12000;
+  //   background-color: #fff;
 
-    &--position{
-        display: flex;
-        justify-content:flex-end;
-    }
+  &--position {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
