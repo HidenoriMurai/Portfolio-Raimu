@@ -1,19 +1,16 @@
-// // ハンバーガーボタン
-// $(".js-btn__hamburger").click(function () {
-//     $(this).toggleClass('active');
-// });
-
 //スライドメニュー
 $(".js-btn__hamburger").click(function () {
   //ボタンがクリックされたら
   $(this).toggleClass("active"); //ボタン自身に activeクラスを付与し
   $(".p-aside").toggleClass("p-aside--panelactive"); //ナビゲーションにpanelactiveクラスを付与
+  $(".l-body").toggleClass("l-body--overlay");
 });
 
 $(".p-aside a").click(function () {
   //ナビゲーションのリンクがクリックされたら
   $(".js-btn__hamburger").removeClass("active"); //ボタンの activeクラスを除去し
   $(".p-aside").removeClass("p-aside--panelactive"); //ナビゲーションのpanelactiveクラスも除去
+  $(".l-body").removeClass("l-body--overlay");
 });
 
 // ブログ用スライダー

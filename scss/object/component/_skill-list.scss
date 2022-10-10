@@ -1,7 +1,7 @@
 @use "../../foundation/color" as c;
 
 .c-skill {
-  margin-top: 40px;
+  list-style-type: none;
   &__list {
     width: 80%;
     height: 400px;

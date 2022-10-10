@@ -4,12 +4,15 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.l-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   font-size: 1.6rem;
+}
+.l-body--overlay {
+  overflow: hidden;
 }
 
 .l-layout {
@@ -32,6 +35,13 @@ body {
   width: 100%;
   height: 70px;
   background-color: #fff;
+}
+
+.l-section {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 60px 0;
 }
 
 .c-btn__detail {
@@ -164,7 +174,7 @@ body {
 }
 
 .c-skill {
-  margin-top: 40px;
+  list-style-type: none;
 }
 .c-skill__list {
   width: 80%;
@@ -734,7 +744,6 @@ body {
   width: 100%;
   height: 250px;
   background-color: #010f3c;
-  margin-top: 60px;
 }
 .p-footer__privacy {
   width: 100%;
@@ -763,6 +772,22 @@ body {
 }
 .p-aside--panelactive {
   top: 0;
+}
+
+.p-aside > ul {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.p-aside > ul > li {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.p-aside > ul > li > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .u-centre {
