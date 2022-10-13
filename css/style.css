@@ -44,6 +44,15 @@ html {
   padding: 20px 0 60px 0;
 }
 
+.l-fade {
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+.l-fade.view {
+  opacity: 1;
+}
+
 .c-btn__detail {
   height: 30px;
   width: 80px;

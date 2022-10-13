@@ -97,3 +97,17 @@ const mySwiper = new Swiper(".p-swiper .swiper", {
     },
   },
 });
+
+// フワッとスキル
+$(function () {
+  $(window).scroll(function () {
+    $(".js-fade").each(function () {
+      const targetElement = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowHeight = $(window).height();
+      if (scroll > targetElement - windowHeight) {
+        $(this).addClass("view");
+      }
+    });
+  });
+});
