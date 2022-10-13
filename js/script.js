@@ -98,13 +98,13 @@ const mySwiper = new Swiper(".p-swiper .swiper", {
   },
 });
 
-// フワッとスキル
+// フワッとスキル(l-fade js-fadeにて設定)
 $(function () {
   $(window).scroll(function () {
     $(".js-fade").each(function () {
-      const targetElement = $(this).offset().top;
-      const scroll = $(window).scrollTop();
-      const windowHeight = $(window).height();
+      const targetElement = $(this).offset().top; //フェードさせる要素の高さ
+      const scroll = $(window).scrollTop(); //スクロールした際の垂直方向のスクロール幅
+      const windowHeight = $(window).height(); //windowの高さ
       if (scroll > targetElement - windowHeight) {
         $(this).addClass("view");
       }
