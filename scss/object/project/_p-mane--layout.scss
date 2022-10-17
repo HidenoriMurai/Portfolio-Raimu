@@ -1,0 +1,62 @@
+@use "../../foundation/color" as c;
+
+.p-mane--layout {
+  background-color: #fff;
+  width: 100%;
+  height: 300px;
+
+  &__container {
+    perspective: 100px;
+    height: 300px;
+    width: 100vw;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &__parallax1 {
+      transform: translateZ(-50px) scale(1.5);
+      height: 300px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+
+      &__img {
+        object-fit: cover;
+        height: 300px;
+      }
+    }
+
+    &__parallax2 {
+      transform: translateZ(0px) scale(1);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 40px;
+      margin-top: 90px;
+      z-index: 100;
+
+      &__img {
+      }
+    }
+
+    &__parallax3 {
+      transform: translateZ(50px) scale(0.5);
+      height: 300px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-top: 100px;
+      z-index: 10;
+
+      &__img {
+        background-color: #1a1919;
+        height: 100%;
+      }
+    }
+  }
+}
