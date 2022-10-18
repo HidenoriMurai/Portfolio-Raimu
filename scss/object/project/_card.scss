@@ -1,34 +1,50 @@
+@use "../../foundation/color" as c;
 
-.p-card{
-    width: 90%;
-    overflow: hidden;
-    padding-left: 10%;
+.p-card {
+  width: 90%;
+  overflow: hidden;
+  padding-left: 10%;
 
-    &--instruction {
-        width: 100%;
-        color: #aaa;
-        font-weight: bold;
-        text-align: center;
+  &--instruction {
+    width: 100%;
+    color: c.$darktext;
+    font-weight: bold;
+    text-align: center;
+    animation-name: smooth-fadein-out;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes smooth-fadein-out {
+    0% {
+      opacity: 0;
     }
-
-    &__List {
-        width: 100%;
-        white-space: nowrap;
-        padding: 40px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        perspective: 700px;
-
-        > .c-card {
-        display: inline-block;
-        margin-right: 10px;
-        width: 200px;
-        white-space: normal;
-        transform-origin: right center;
-        
-            &__img {
-                min-height: 150px;
-            }
-        }
+    100% {
+      opacity: 1;
     }
+  }
+
+  &__List {
+    width: 100%;
+    white-space: nowrap;
+    padding: 40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    perspective: 700px;
+
+    > .c-card {
+      display: inline-block;
+      margin-right: 10px;
+      width: 200px;
+      white-space: normal;
+      transform-origin: right center;
+
+      &__img {
+        min-height: 150px;
+      }
+    }
+  }
 }

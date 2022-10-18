@@ -212,9 +212,37 @@ html {
 }
 .p-card--instruction {
   width: 100%;
-  color: #aaa;
+  color: #3d5975;
   font-weight: bold;
   text-align: center;
+  -webkit-animation-name: smooth-fadein-out;
+          animation-name: smooth-fadein-out;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes smooth-fadein-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes smooth-fadein-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .p-card__List {
   width: 100%;
@@ -494,6 +522,18 @@ html {
     width: 100%;
   }
 }
+.p-main--txt {
+  position: absolute;
+  top: 300px;
+  left: 30%;
+  width: 0;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
 .u-centre {
   justify-content: center;
 }
