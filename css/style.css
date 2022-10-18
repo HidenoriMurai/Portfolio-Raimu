@@ -191,6 +191,19 @@ html {
   padding-top: 20px;
 }
 
+.p-back--parallax__img {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/back-imgのコピー.png);
+}
+
 .p-header {
   width: 100%;
   height: 70px;
@@ -261,41 +274,6 @@ html {
 }
 .p-card__List > .c-card__img {
   min-height: 150px;
-}
-
-.p-blog__parallax__img {
-  position: fixed; /* fixedに変更する。それ以外は同じ。 */
-  top: 70px;
-  left: 0;
-  z-index: -1;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-image: url(/images/back-imgのコピー.png);
-}
-
-.p-blog__parallax__front1 {
-  color: #7895b2;
-  font-size: 2.4rem;
-  margin-top: 30px;
-  padding: 60px;
-  height: auto;
-  width: 80%;
-  margin-left: 10%;
-  background-color: #f5efe6;
-}
-
-.p-blog__parallax__front2 {
-  color: #fff;
-  font-size: 2.4rem;
-  margin-top: 60px;
-  padding: 60px;
-  height: auto;
-  width: 80%;
-  margin-left: 10%;
-  background-color: #7895b2;
 }
 
 .p-profile {
