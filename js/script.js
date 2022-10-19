@@ -54,3 +54,8 @@ $(function () {
     });
   });
 });
+
+//再読み込み時TOP表示
+$(function () {
+  $("html,body").animate({ scrollTop: 0 }, "1");
+});
