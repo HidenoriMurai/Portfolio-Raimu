@@ -61,35 +61,21 @@ $(function () {
 });
 
 //TOP誘導ボタン
-jQuery(function () {
-  var appear = false;
-  var pagetop = $("#c-page-top");
+// ページの読み込みが完了してから実行
+$(function () {
+  // スクロールしたときに実行
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 350) {
-      //100pxスクロールしたら
-      if (appear == false) {
-        appear = true;
-        pagetop.stop().animate(
-          {
-            bottom: "50px", //下から50pxの位置に
-          },
-          300
-        ); //0.3秒かけて現れる
-      }
+    // 目的のスクロール量を設定(px)
+    var TargetPos = 350;
+    // 現在のスクロール位置を取得
+    var ScrollPos = $(window).scrollTop();
+    // 現在位置が目的のスクロール量に達しているかどうかを判断
+    if (ScrollPos >= TargetPos) {
+      // 達していれば表示
+      $("#c-page-top").fadeIn();
     } else {
-      if (appear) {
-        appear = false;
-        pagetop.stop().animate(
-          {
-            bottom: "-50px", //下から-50pxの位置に
-          },
-          300
-        ); //0.3秒かけて隠れる
-      }
+      // 達していなければ非表示
+      $("#c-page-top").fadeOut();
     }
-  });
-  pagetop.click(function () {
-    $("body, html").animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
-    return false;
   });
 });
