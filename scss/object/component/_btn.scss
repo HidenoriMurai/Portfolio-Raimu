@@ -29,7 +29,7 @@
 
 /*ボタン内側*/
 .c-btn__hamburger .c-btn__hamburger__area {
-  transition: all 0.5s; /*アニメーションの設定*/
+  transition: all 0.7s; /*アニメーションの設定*/
   width: 70px;
   height: 70px;
   top: 0;
@@ -37,7 +37,7 @@
 
 .c-btn__hamburger span {
   display: inline-block;
-  transition: all 0.3s;
+  transition: all 0.1s;
   position: absolute;
   left: 14px;
   height: 3px;
@@ -65,7 +65,7 @@
 
 .c-btn__hamburger.active span:nth-of-type(1) {
   top: 27px;
-  left: 29px;
+  left: 24px;
   transform: translateY(6px) rotate(-45deg);
   width: 30%;
 }
@@ -76,7 +76,7 @@
 
 .c-btn__hamburger.active span:nth-of-type(3) {
   top: 39px;
-  left: 29px;
+  left: 24px;
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
 }
