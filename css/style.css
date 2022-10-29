@@ -268,6 +268,47 @@ html {
   padding: 5px 5px;
 }
 
+.c-scroll {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  color: #ffffff;
+  overflow: hidden;
+  background-color: #1a1919;
+  top: 320px;
+}
+.c-scroll__contents {
+  font-size: 2rem;
+  display: inline-block;
+  padding-left: 100%;
+  white-space: nowrap;
+  line-height: 1em;
+  -webkit-animation: scrollAnime 18s linear infinite;
+          animation: scrollAnime 18s linear infinite;
+}
+
+.c-scroll__contents div {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@-webkit-keyframes scrollAnime {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollAnime {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .p-header {
   width: 100%;
   height: 70px;
@@ -555,18 +596,6 @@ html {
     width: 100%;
   }
 }
-.p-main--txt {
-  position: absolute;
-  left: 15%;
-  top: 300px;
-  width: 0;
-  margin: 0;
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #fff;
-  white-space: nowrap;
-}
-
 .u-padding--width1 {
   padding: 15px 56.5px 15px 56.5px;
 }
