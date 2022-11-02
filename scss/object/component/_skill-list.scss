@@ -4,9 +4,9 @@
   list-style-type: none;
   &__list {
     width: 80%;
-    height: 400px;
+    height: auto;
     margin-left: 10%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     background-color: c.$white;
 
     &__ttl {
@@ -24,6 +24,18 @@
       display: flex;
       justify-content: center;
       padding: 40px 0 40px 0;
+    }
+
+    &__txt {
+      padding: 20px 0 40px 0;
+    }
+
+    &__txt > li {
+      list-style: none;
+    }
+
+    &__txt > li > p {
+      padding-top: 10px;
     }
   }
 }
