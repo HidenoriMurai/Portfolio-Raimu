@@ -626,6 +626,33 @@ a:hover:after {
     width: 100%;
   }
 }
+#sky {
+  width: 100%;
+  height: 100px;
+}
+
+.p-main--layout__container__star {
+  position: absolute;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation-name: twinkle;
+          animation-name: twinkle;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes twinkle {
+  50% {
+    transform: scale(0.2);
+  }
+}
+
+@keyframes twinkle {
+  50% {
+    transform: scale(0.2);
+  }
+}
 .u-padding--width1 {
   padding: 15px 56.5px 15px 56.5px;
 }

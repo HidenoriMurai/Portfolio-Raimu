@@ -79,3 +79,24 @@ $(function () {
     }
   });
 });
+
+//星アニメーション
+$(window).on("load", function () {
+  for (var i = 0; i < 150; i++) {
+    //get random dimensions
+    var x = Math.random() * 100;
+    var y = Math.random() * 100;
+    var d = Math.random() * 4;
+    var s = Math.random() * 2 + 1.5;
+    //create new element and add to html
+    var star = document.createElement("div");
+    star.classList.add("p-main--layout__container__star");
+    var sky = document.getElementById("sky");
+    sky.appendChild(star);
+    star.style.width = d + "px";
+    star.style.height = d + "px";
+    star.style.top = y + "%";
+    star.style.left = x + "%";
+    star.style.animationDuration = s + "s";
+  }
+});
