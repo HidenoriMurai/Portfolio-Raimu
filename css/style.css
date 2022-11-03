@@ -327,8 +327,7 @@ a:hover:after {
   width: 100%;
   color: #ffffff;
   overflow: hidden;
-  background-color: #1a1919;
-  top: 310px;
+  background-color: rgb(30, 29, 29);
 }
 .c-scroll__contents {
   font-size: 2.4rem;
@@ -562,49 +561,23 @@ a:hover:after {
 .p-main--layout {
   background-color: #fff;
   width: 100%;
-  height: 300px;
 }
 .p-main--layout__container {
   perspective: 100px;
-  height: 300px;
+  height: 250px;
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #1a1919;
+  background-color: #000000;
 }
-.p-main--layout__container__parallax1 {
-  transform: translateZ(-50px) scale(1.5);
-  height: 300px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-}
-.p-main--layout__container__parallax1__img {
+.p-main--layout__container__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-}
-.p-main--layout__container__parallax2 {
-  transform: translateZ(0px) scale(1);
+  height: 250px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 40px;
-  margin-top: 110px;
-  z-index: 100;
-}
-.p-main--layout__container__parallax3 {
-  transform: translateZ(50px) scale(0.5);
-  height: 300px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 100px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-main--animation {
