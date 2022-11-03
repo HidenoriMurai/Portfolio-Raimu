@@ -123,7 +123,6 @@ html {
   font-size: 2.4rem;
   text-align: center;
   font-weight: bold;
-  width: 200px;
   padding: 15px 50px;
   background-color: #ffffff;
   color: #000000;
@@ -142,11 +141,13 @@ html {
 }
 
 .c-btn--menu {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 .c-btn--menu > li {
-  padding: 30px 0 0 30%;
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
 }
 
 .c-btn--blog {
@@ -655,10 +656,13 @@ a:hover:after {
   padding: 15px 56.5px 15px 56.5px;
 }
 .u-padding--width3 {
-  padding: 15px 58.5px 15px 58.5px;
+  padding: 15px 57px 15px 57px;
 }
 .u-padding--width2 {
   padding: 15px 40px 15px 40px;
+}
+.u-padding--width4 {
+  padding: 15px 26px 15px 26px;
 }
 
 .u-size--h3 {
