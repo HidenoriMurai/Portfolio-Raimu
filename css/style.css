@@ -210,7 +210,7 @@ html {
   width: 80%;
   height: auto;
   margin-left: 10%;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: #fff;
 }
 .c-skill__list__ttl {
@@ -499,19 +499,14 @@ html {
   width: 100%;
   height: 200px;
   background-color: rgb(30, 30, 30);
-}
-.p-footer__privacy {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.p-footer__privacy__policy {
-  font-size: 1.2rem;
-  color: #fff;
-}
-.p-footer__privacy__copyright {
+.p-footer__copyright {
   font-size: 1rem;
   color: #fff;
+  padding: 0 0 20px 30px;
 }
 
 .p-aside {
