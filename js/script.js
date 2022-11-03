@@ -86,7 +86,7 @@ $(window).on("load", function () {
     //get random dimensions
     var x = Math.random() * 100;
     var y = Math.random() * 100;
-    var d = Math.random() * 4;
+    var d = Math.random() * 2;
     var s = Math.random() * 2 + 1.5;
     //create new element and add to html
     var star = document.createElement("div");

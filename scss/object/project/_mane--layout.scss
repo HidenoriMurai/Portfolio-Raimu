@@ -24,11 +24,10 @@
 
 //トップ画像テキストアニメーション
 .p-main--animation {
+  width: 100%;
+  padding-left: 20px;
   position: absolute;
   top: 100px;
-  left: 15px;
-  width: 0;
-  margin: 0;
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
@@ -61,15 +60,19 @@
 //Top画像星アニメーション
 #sky {
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 .p-main--layout__container__star {
-  position: absolute;
   background-color: white;
   position: absolute;
   border-radius: 50%;
   animation-name: twinkle;
   animation-iteration-count: infinite;
+
+  &--box {
+    height: 100px;
+    width: 100%;
+  }
 }
 @keyframes twinkle {
   50% {

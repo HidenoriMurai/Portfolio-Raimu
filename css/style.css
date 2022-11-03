@@ -581,11 +581,10 @@ a:hover:after {
 }
 
 .p-main--animation {
+  width: 100%;
+  padding-left: 20px;
   position: absolute;
   top: 100px;
-  left: 15px;
-  width: 0;
-  margin: 0;
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
@@ -628,11 +627,10 @@ a:hover:after {
 }
 #sky {
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 
 .p-main--layout__container__star {
-  position: absolute;
   background-color: white;
   position: absolute;
   border-radius: 50%;
@@ -640,6 +638,10 @@ a:hover:after {
           animation-name: twinkle;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+.p-main--layout__container__star--box {
+  height: 100px;
+  width: 100%;
 }
 
 @-webkit-keyframes twinkle {
