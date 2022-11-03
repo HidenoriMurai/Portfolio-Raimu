@@ -154,7 +154,7 @@ html {
   list-style: none;
   font-size: 2rem;
   text-align: left;
-  padding: 20px 0 60px 30px;
+  padding: 20px 0 0px 30px;
 }
 
 .c-btn--blog > li {
@@ -450,6 +450,7 @@ a:hover:after {
   background-color: #f5efe6;
 }
 .p-profile__img {
+  margin-top: 80px;
   width: 100%;
   border-radius: 50%;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
