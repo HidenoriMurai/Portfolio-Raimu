@@ -14,15 +14,16 @@
       font-size: 16px;
 
       &__date {
-        width: 250px;
+        width: 40%;
         padding: 0 0 0 20px;
         color: #888888;
         font-weight: bold;
+        text-align: center;
       }
 
       &__content {
         position: relative;
-        width: 100%;
+        width: 60%;
         padding: 0 20px 60px 30px;
         border-left: 1px solid #aaaaaa;
 

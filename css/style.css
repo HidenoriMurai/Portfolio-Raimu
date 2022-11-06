@@ -148,6 +148,7 @@ html {
   width: 100%;
   margin-top: 35px;
   text-align: center;
+  list-style: none;
 }
 
 .c-btn--blog {
@@ -503,14 +504,15 @@ html {
   font-size: 16px;
 }
 .p-timeline__list__item__date {
-  width: 250px;
+  width: 40%;
   padding: 0 0 0 20px;
   color: #888888;
   font-weight: bold;
+  text-align: center;
 }
 .p-timeline__list__item__content {
   position: relative;
-  width: 100%;
+  width: 60%;
   padding: 0 20px 60px 30px;
   border-left: 1px solid #aaaaaa;
 }
