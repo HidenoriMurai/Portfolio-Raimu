@@ -1,3 +1,4 @@
+@use "../../foundation/breakpoint" as b;
 .c-scroll {
   position: relative;
   margin: auto;
@@ -13,6 +14,9 @@
     white-space: nowrap;
     line-height: 1em;
     animation: scrollAnime 19s linear infinite;
+    @include b.tab {
+      font-size: 3rem;
+    }
   }
 }
 .c-scroll__contents div {

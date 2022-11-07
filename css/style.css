@@ -348,6 +348,11 @@ html {
   -webkit-animation: scrollAnime 19s linear infinite;
           animation: scrollAnime 19s linear infinite;
 }
+@media (min-width: 678px) {
+  .c-scroll__contents {
+    font-size: 3rem;
+  }
+}
 
 .c-scroll__contents div {
   display: inline-block;
@@ -461,15 +466,18 @@ html {
   padding: 60px;
   height: auto;
   background-color: #f5efe6;
+  text-align: center;
 }
 .p-profile__img {
   margin-top: 80px;
-  width: 100%;
   border-radius: 50%;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 350px;
 }
 .p-profile__box {
   padding-top: 60px;
+  text-align: start;
 }
 
 .p-profile > p {
@@ -596,7 +604,7 @@ html {
 }
 
 .p-main--animation {
-  width: 100%;
+  width: 0;
   padding-left: 20px;
   position: absolute;
   top: 100px;
@@ -605,8 +613,14 @@ html {
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: animation-anim 2s forwards linear;
-          animation: animation-anim 2s forwards linear;
+  -webkit-animation: animation-anim 4s forwards linear;
+          animation: animation-anim 4s forwards linear;
+}
+@media (min-width: 678px) {
+  .p-main--animation {
+    font-size: 3.2rem;
+    padding-left: 40px;
+  }
 }
 
 .p-main--animation:nth-child(2) {
@@ -615,12 +629,22 @@ html {
   position: absolute;
   top: 130px;
 }
+@media (min-width: 678px) {
+  .p-main--animation:nth-child(2) {
+    top: 150px;
+  }
+}
 
 .p-main--animation:nth-child(3) {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   position: absolute;
   top: 160px;
+}
+@media (min-width: 678px) {
+  .p-main--animation:nth-child(3) {
+    top: 200px;
+  }
 }
 
 @-webkit-keyframes animation-anim {

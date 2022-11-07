@@ -1,4 +1,5 @@
 @use "../../foundation/color" as c;
+@use "../../foundation/breakpoint" as b;
 
 .p-main--layout {
   background-color: #fff;
@@ -24,7 +25,7 @@
 
 //トップ画像テキストアニメーション
 .p-main--animation {
-  width: 100%;
+  width: 0;
   padding-left: 20px;
   position: absolute;
   top: 100px;
@@ -33,19 +34,29 @@
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
-  animation: animation-anim 2s forwards linear;
+  animation: animation-anim 4s forwards linear;
+  @include b.tab {
+    font-size: 3.2rem;
+    padding-left: 40px;
+  }
 }
 
 .p-main--animation:nth-child(2) {
   animation-delay: 1.5s;
   position: absolute;
   top: 130px;
+  @include b.tab {
+    top: 150px;
+  }
 }
 
 .p-main--animation:nth-child(3) {
   animation-delay: 3s;
   position: absolute;
   top: 160px;
+  @include b.tab {
+    top: 200px;
+  }
 }
 
 @keyframes animation-anim {
