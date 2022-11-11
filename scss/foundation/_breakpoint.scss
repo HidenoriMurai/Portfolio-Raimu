@@ -1,25 +1,29 @@
 /*ブレークポイント*/
-$sp:677px;
-$tab: 678px;  //以上
-$pc: 1200px;   //以上
+$sp: 677px;
+$tab: 678px; //以上
+$pc: 1200px; //以上
+$pclow: 1199px; //以下
 
-
-@mixin sp{
-    @media (max-width: ($sp)) {
+@mixin sp {
+  @media (max-width: ($sp)) {
     @content;
-    }
+  }
 }
 
-
-
-@mixin tab{
-    @media (min-width: ($tab)) {
+@mixin tab {
+  @media (min-width: ($tab)) {
     @content;
-    }
+  }
 }
 
-@mixin pc{
-    @media (min-width: ($pc)) {
+@mixin pc {
+  @media (min-width: ($pc)) {
     @content;
-    }
+  }
+}
+
+@mixin pclow {
+  @media (max-width: ($pclow)) {
+    @content;
+  }
 }

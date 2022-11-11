@@ -1,4 +1,5 @@
 @use "../../foundation/color" as c;
+@use "../../foundation/breakpoint" as b;
 
 .c-btn {
   // ブログ詳細ボタン
@@ -15,6 +16,10 @@
     color: c.$darktext;
     font-size: 2.4rem;
     font-weight: bold;
+    @include b.pc {
+      margin-right: 30px;
+      width: 120px;
+    }
   }
 }
 
@@ -25,6 +30,9 @@
   width: 70px;
   height: 70px;
   border-radius: 5px;
+  @include b.pc {
+    display: none;
+  }
 }
 
 /*ボタン内側*/
@@ -96,6 +104,13 @@
   box-sizing: border-box;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   transition: 0.2s;
+
+  @include b.pc {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: c.$blogbox-light;
+    text-decoration: none;
+  }
 }
 
 /* マウスオーバー時 */
@@ -107,6 +122,12 @@
 
 .c-btn--menu {
   padding-top: 120px;
+  @include b.pc {
+    display: flex;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-bottom: 35px;
+  }
 }
 .c-btn--menu > li {
   width: 100%;

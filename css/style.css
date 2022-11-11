@@ -56,6 +56,12 @@ html {
   font-size: 2.4rem;
   font-weight: bold;
 }
+@media (min-width: 1200px) {
+  .c-btn__inform {
+    margin-right: 30px;
+    width: 120px;
+  }
+}
 
 .c-btn__hamburger {
   position: relative; /*ボタン内側の基点となるためrelativeを指定*/
@@ -63,6 +69,11 @@ html {
   width: 70px;
   height: 70px;
   border-radius: 5px;
+}
+@media (min-width: 1200px) {
+  .c-btn__hamburger {
+    display: none;
+  }
 }
 
 /*ボタン内側*/
@@ -132,6 +143,14 @@ html {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   transition: 0.2s;
 }
+@media (min-width: 1200px) {
+  .c-btn--menu_design {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #f5efe6;
+    text-decoration: none;
+  }
+}
 
 /* マウスオーバー時 */
 .c-btn--menu_design:hover {
@@ -142,6 +161,14 @@ html {
 
 .c-btn--menu {
   padding-top: 120px;
+}
+@media (min-width: 1200px) {
+  .c-btn--menu {
+    display: flex;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-bottom: 35px;
+  }
 }
 
 .c-btn--menu > li {
@@ -411,6 +438,11 @@ html {
 .p-header--position {
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1199px) {
+  .p-header__layout {
+    display: none;
+  }
 }
 
 .p-card {

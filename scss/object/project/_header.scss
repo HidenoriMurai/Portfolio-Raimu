@@ -1,4 +1,5 @@
 @use "../../foundation/color" as c;
+@use "../../foundation/" as b;
 
 .p-header {
   width: 100%;
@@ -13,5 +14,11 @@
   &--position {
     display: flex;
     justify-content: flex-end;
+  }
+
+  &__layout {
+    @include b.pclow {
+      display: none;
+    }
   }
 }
